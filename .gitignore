@@ -1,0 +1,33 @@
+# Python編譯過程產生的檔案
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+
+# PyInstaller產生的檔案和目錄
+/dist/
+/build/
+*.spec
+
+# 作業系統相關的檔案
+.DS_Store
+Thumbs.db
+
+# 虛擬環境
+venv/
+env/
+
+# IDE相關的檔案
+.idea/
+.vscode/
+
+# 紀錄檔和臨時檔
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 忽略 Markdown 文件備份檔案
+*.md~
