@@ -116,9 +116,8 @@ class TranscriptScraperApp(QMainWindow):
             filename = re.sub(r'[-\s]+', '-', filename)
             filename = f"{filename}.md"
             
-            # Get the directory of the current script
-            current_dir = os.path.dirname(os.path.abspath(__file__))
-            filepath = os.path.join(current_dir, filename)
+            # Get the directory of the current working directory (script execution path)
+            filepath = os.path.join(os.getcwd(), filename)
             
             # Write the markdown content
             with open(filepath, 'w', encoding='utf-8') as f:
